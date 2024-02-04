@@ -1,0 +1,23 @@
+{
+  "name": "simple-codes",
+  "version": "1.0.0",
+  "description": "very simple codes are in this package which is very easy to write. This package maybe usefull if you dont want to write easy codes again and again.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SatirthaRoy/Simple-Codes.git"
+  },
+  "keywords": [
+    "simple",
+    "codes"
+  ],
+  "author": "Satirtha Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SatirthaRoy/Simple-Codes/issues"
+  },
+  "homepage": "https://github.com/SatirthaRoy/Simple-Codes#readme"
+}

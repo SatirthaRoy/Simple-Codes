@@ -21,7 +21,13 @@ const simpleCodes = {
   
   sortDescend(a) {
     return a.sort((a,b)=> b-a);
+  },
+
+  sumOfAllNums(a) {
+    return a.reduce((initial, value) => initial + value,0);
   }
 };
+
+console.log(simpleCodes.sumOfAllNums([1,2,3,4,5]));
 
 module.exports = simpleCodes;

@@ -82,6 +82,5 @@ const simpleCodes = {
   },
 };
 
-console.log(simpleCodes.returnMin([5,5,2,89,32,19]));
 
 module.exports = simpleCodes;

@@ -155,7 +155,7 @@ const simpleCodes = {
       a.forEach((item,i) => {
         w += item;
         if(isNaN(Number(a[i+1])) && a[i+1] !== '.') {
-          arr.push(w);
+          arr.push(String(Number(w)));
           w='';
         }
         if(isNaN(Number(item)) && item !== '.') {
@@ -170,7 +170,7 @@ const simpleCodes = {
   
     // mathematics starts here
     // checks division first
-    let str = a.join('');
+    let str = arr.join('');
     while(str.includes('/')) {
       let num1 = Number(arr[arr.lastIndexOf('/')-1]);
       let num2 = Number(arr[arr.lastIndexOf('/')+1]);
@@ -186,8 +186,10 @@ const simpleCodes = {
       str = str.replaceAll(`${num1}*${num2}`, `${num1*num2}`);
       a = str.split('');
       arr = splitNumbersOp(a);
+      console.log(arr);
+      console.log(str);
     }
-    //console.log(str);
+    console.log(str);
   
     // checks addition third
     while(str.includes('+')) {
@@ -230,6 +232,6 @@ const simpleCodes = {
   }, 
 };
 
-//console.log(simpleCodes.sortAscend([12,3,6,7]));
+//console.log(simpleCodes.calculate('4.50*2'));
 
 module.exports = simpleCodes;
